@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Creating Fixed Header and Footer with CSS</title>
+<style type="text/css">
+   
+    body{        
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .container{
+        width: 80%;
+	
+        
+    }
+    .fixed-header, .fixed-footer{
+        width: 100%;
+        position: fixed;        
+        background: #3D91E0;
+        padding: 10px 0;
+        color: #fff;
+	
+    }
+    .fixed-header{
+        top: 0;
+	height:5%;
+	width:100%;
+	margin:0%;
+    }
+    .fixed-footer{
+        bottom: 0;
+	width:100%;
+    }    
+	
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.next {
+    background-color: #f1f1f1;
+    color: black;
+	
+}
+	a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+    background-color: #3D91E0;
+    color: black;
+}
+
+.round {
+    border-radius: 150%;
+}
+    
+   
+    .container p{
+        line-height: 200px; 
+    }
+</style>
+	<div class="fixed-header">
+<h2 style="padding:-1.2rem;margin-top:1%;margin-left:10px;">Free Online .Net Quiz</h2>
+	</div>
+	</head>
+<body bgcolor="">
+	<br/>
+	<br/>
+	<center>
+	<div class="row">
+		<div class="col-mod-2">
+		<table align="left" style="margin-left:40px;">
+			<tr>
+			<th >Quiz Name:</th>
+			<td align="left">Dot Net</th>
+			</tr>
+			
+		</table>
+	</div>
+	
+		
+		<a href="file:///home/aissel-testing/Desktop/quizhome.html" class="previous" style="margin-left:-250px;">&laquo; Previous</a>
+			
+<a href="file:///home/aissel-testing/Desktop/quiz1.html" class="next" style="">Next &raquo;</a>   
+
+		
+		
+		<div class="col-mod-4">
+			<table align="right" style="margin-right:40px;margin-top:-20px;">
+				<tr>
+				<th align="right">Time:</th>
+				<td align="right">2:30:01 PM</td>
+			</tr>
+				</table>
+				</div>
+	
+	</div>
+
+	</center>
+	
+	<form style="boreder:1px solid black;margin-top:100px;">
+		<h3 style="margin-left:123px;"><b><i>Question 1</i></b></h3>
+<form id="f1">
+		<pre>                <h3 style="margin-left:140px;"><b>1. How do you execute multiple SQL statements using a DataReader?</b></h3>
+
+			<a id="demo" onclick="myfunction()" name="question8" value="a"><b>a.</b> Call the ExecuteReadermethod of two Command objects and assign the results tothe same instance of a DataReader.<br/></a>
+			<a id="demo1" onclick="myfunction2()" name="question8" value="b"><b>b.</b> Call the ExecuteReadermethod of a single Command object twice.<br/></a>
+			<a id="demo2" onclick="myfunction3()" name="question8" value="c"><b>c.</b> Set the Command.CommandTextproperty to multiple SQL statements delimited by a semicolon.<br/></a>
+			<a id="demo3" onclick="myfunction4()" name="question8" value="d"><b>d.</b> Set the Command.CommandTypeproperty to multiple result sets.<br/></a>
+			<a id="demo4"/>
+		</pre>
+
+	</form>
+		<script type="text/javascript">
+function myfunction() {
+    document.getElementById("demo").style.color = "red";
+				document.getElementById("demo4").innerHTML =" <b>Correct answer is c.Set the Command.CommandTextproperty to multiple SQL statements delimited by a semicolon.</b>";
+				//var a[]={incorrect};
+			
+}
+	function myfunction2() {
+    document.getElementById("demo1").style.color = "red";
+				document.getElementById("demo4").innerHTML =" <b>Correct answer is c.Set the Command.CommandTextproperty to multiple SQL statements delimited by a semicolon.</b>";
+			//var a[]={incorrect};
+}
+	function myfunction3() {
+    document.getElementById("demo2").style.color = "blue";
+				document.getElementById("demo4").innerHTML =" <b>Correct answer</b>";
+			//var a[]={correct};
+}
+	function myfunction4() {
+    document.getElementById("demo3").style.color = "red";
+				document.getElementById("demo4").innerHTML =" <b>Correct answer is c.Set the Command.CommandTextproperty to multiple SQL statements delimited by a semicolon.</b>";
+			//var a[]={incorrect};
+}
+
+var user=[a,b,c,d];
+var answers=[a];
+
+
+function getscore(){
+var s=0;
+var nq=6;
+for(i=0;i<=5;i++)
+{
+if(user[i]==answers[a])
+{s++;
+}
+else{
+s=s+0;
+}
+return score;
+}
+}
+function returnscore(){
+alert("your score is"+getscore()+"/10");
+}
+</script>
+
+	
+    <div class="fixed-footer">
+		<center><div class="container">www.website.com</div></center>   
+    </div>
+		
+</body>
+</html>                            

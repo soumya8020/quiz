@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Creating Fixed Header and Footer with CSS</title>
+<style type="text/css">
+   
+    body{        
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+    .container{
+        width: 100%;
+
+	
+        
+    }
+    .fixed-header, .fixed-footer{
+        width: 100%;
+        position: fixed;        
+        background: #3D91E0;
+        padding: 10px 0;
+        color: #fff;
+	
+    }
+    .fixed-header{
+        top: 0;
+	height:5%;
+	width:100%;
+	margin:0%;
+    }
+    .fixed-footer{
+        bottom: 0;
+	width:100%;
+    }    
+	
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.next {
+    background-color: #f1f1f1;
+    color: black;
+	
+}
+	a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+    background-color: #3D91E0;
+    color: black;
+}
+
+.round {
+    border-radius: 150%;
+}
+    
+	.container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #3D91E0;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container .btn:hover {
+    background-color: #555;
+}
+   
+    .container p{
+        line-height: 200px; 
+    }
+</style>
+	<div class="fixed-header">
+<img src="qu.jpg" width="10%" height="260%" vspace="-40px" hspace="40px;">
+
+<!--<h2 align="right" style="margin-top:0.01%;"><font color="black">Free Online .Net Quiz</font></h2>-->
+	</div>
+	</head>	
+	
+<body>
+	<br/>
+	
+	<center><h1 style="margin-left:0px;"><i>Welcome to the website...!!!</i></h1></center>
+	<br/>
+	<form action="file:///home/aissel-testing/Desktop/quiz.html">
+	<div class="container">
+	<img src="images.jpg" width="50%" height="40%" hspace="340px" vspace="-300px" align="center"/>
+		
+		<button class="btn">Take Test</button>
+		</div>
+	</form>
+	
+	
+	
+	
+	
+	
+	
+	
+    <div class="fixed-footer">
+		<center><div class="container">www.website.com</div></center>   
+    </div>
+		
+</body>
+</html>                            

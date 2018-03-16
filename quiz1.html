@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Creating Fixed Header and Footer with CSS</title>
+<style type="text/css">
+   
+    body{        
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .container{
+        width: 80%;
+	
+        
+    }
+    .fixed-header, .fixed-footer{
+        width: 100%;
+        position: fixed;        
+        background: #3D91E0;
+        padding: 10px 0;
+        color: #fff;
+	
+    }
+    .fixed-header{
+        top: 0;
+	height:5%;
+	width:100%;
+	margin:0%;
+    }
+    .fixed-footer{
+        bottom: 0;
+	width:100%;
+    }    
+	
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.next {
+    background-color: #f1f1f1;
+    color: black;
+	
+}
+	a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+    background-color: #3D91E0;
+    color: black;
+}
+
+.round {
+    border-radius: 150%;
+}
+    
+   
+    .container p{
+        line-height: 200px; 
+    }
+</style>
+	<div class="fixed-header">
+<h2 style="padding:-1.2rem;margin-top:1%;margin-left:10px;">Free Online .Net Quiz</h2>
+	</div>
+
+	</head>
+<body bgcolor="">
+	<br/>
+	<br/>
+	<center>
+	<div class="row">
+		<div class="col-mod-2">
+		<table align="left" style="margin-left:40px;">
+			<tr>
+			<th >Quiz Name:</th>
+			<td align="left">Dot Net</th>
+			</tr>
+			
+		</table>
+	</div>
+	
+		
+		
+			<a href="file:///home/aissel-testing/Desktop/quiz.html" class="previous" style="margin-left:-250px;">&laquo; Previous</a>
+<a href="file:///home/aissel-testing/Desktop/quiz2.html" class="next">Next &raquo;</a>   
+
+		
+		
+		<div class="col-mod-4">
+			<table align="right" style="margin-right:40px;margin-top:-10px;">
+				<tr>
+				<th align="right">Time:</th>
+				<td align="right">2:28:06 PM</td>
+			</tr>
+				</table>
+				</div>
+	
+	</div>
+
+	</center>
+	
+	<form style="boreder:1px solid black;margin-top:100px;"/>
+		<h3 style="margin-left:123px;"><b><i>Question 2</i></b></h3>
+		<pre>                <h3 style="margin-left:140px;"><b>2. Which of the following statements is correct about Managed Code?</b></h3>
+
+			<a id="demo" onclick="myfunction()"><b>a.</b> Managed code is the code that is compiled by the JIT compilers.<br/></a>
+			<a id="demo1" onclick="myfunction2()"><b>b.</b> Managed code is the code where resources are Garbage Collected.<br/></a>
+			<a id="demo2" onclick="myfunction3()"><b>c.</b> Managed code is the code that runs on top of Windows.<br/></a>
+			<a id="demo3" onclick="myfunction4()"><b>d.</b> Managed code is the code that is written to target the services of the CLR.<br/></a>
+			<a id="demo4"/>
+		</pre>
+	</form>
+		<script>
+function myfunction() {
+    document.getElementById("demo").style.color = "red";
+				document.getElementById("demo4").innerHTML =" <b>Correct answer is d.Managed code is the code that is written to target the services of the CLR.</b>";
+				//a.push('incorrect');
+			
+}
+	function myfunction2() {
+    document.getElementById("demo1").style.color = "red";
+				document.getElementById("demo4").innerHTML =" <b>Correct answer is d.Managed code is the code that is written to target the services of the CLR.</b>";
+			//a.push('incorrect');
+}
+	function myfunction3() {
+    document.getElementById("demo2").style.color = "red";
+				document.getElementById("demo4").innerHTML =" <b>Correct answer is d.Managed code is the code that is written to target the services of the CLR.</b>";
+			//a.push('incorrect');
+}
+	function myfunction4() {
+    document.getElementById("demo3").style.color = "blue";
+				document.getElementById("demo4").innerHTML =" <b>Correct answer</b>";
+			//a.push('correct');
+			
+}</script>
+	
+    <div class="fixed-footer">
+		<center><div class="container">www.website.com</div>     </center>   
+    </div>
+		
+</body>
+</html>                            
